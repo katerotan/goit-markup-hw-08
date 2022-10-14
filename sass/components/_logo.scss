@@ -1,0 +1,32 @@
+/*--------ЛОГО HEADER--------*/
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+  color: $logo-dark;
+
+  display: block;
+  margin-right: 93px;
+}
+
+.header-logo-accent {
+  color: $logo-accent;
+}
+
+/*--------ЛОГО FOOTER--------*/
+
+.footer-logo {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+
+  color: $logo-light;
+}
+
+.footer-logo-accent {
+  color: $logo-accent;
+}
