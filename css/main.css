@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Fonts*/
 /*Colors*/
 /*white texts*/
@@ -8,7 +9,7 @@
 /*backgrounds*/
 /*clients*/
 /*socials*/
-/*Header Logo*/
+/*переменные, палитра*/ /*Header Logo*/
 .header-logo {
   font-family: "Raleway";
   font-size: 24px;
@@ -46,4 +47,7 @@
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #2196f3;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*дизайн логотипа БЕЗ располжения*/
+/* Общее, ул, ли, другое*//*# sourceMappingURL=main.css.map */
