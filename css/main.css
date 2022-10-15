@@ -1,37 +1,49 @@
+/*Fonts*/
+/*Colors*/
+/*white texts*/
+/*dark texts*/
+/*white texts with shadows*/
+/*Objects*/
+/*buttons*/
+/*backgrounds*/
+/*clients*/
+/*socials*/
 /*Header Logo*/
 .header-logo {
-  font-family: $logo-font;
+  font-family: "Raleway";
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: $logo-black;
+  color: #212121;
   margin: 0;
   padding: 0;
 }
+
 .header-logo-accent {
-  font-family: $logo-font;
+  font-family: "Raleway";
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: $logo-accent;
+  color: #2196f3;
 }
 
 /*Footer Logo*/
 .footer-logo {
-  font-family: $logo-font;
+  font-family: "Raleway";
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: $logo-white;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
+
 .footer-logo-accent {
-  font-family: $logo-font;
+  font-family: "Raleway";
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: $logo-accent;
-}
+  color: #2196f3;
+}/*# sourceMappingURL=main.css.map */
