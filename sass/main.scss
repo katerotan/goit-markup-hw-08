@@ -1,8 +1,8 @@
 @import './utils/variables'; /*переменные, палитра*/
 
-@import './positioning/media-mobile'; /* ПОЗИЦИОНИРОВАНИЕ НА 480px*/
-@import './positioning/media-tablet'; /*  ПОЗИЦИОНИРОВАНИЕ НА 768px*/
-@import './positioning/media-desktop'; /*  ПОЗИЦИОНИРОВАНИЕ НА 1600px*/
+@import './positioning/media-mobile'; /* ПОЗИЦИОНИРОВАНИЕ и ширина контейнера НА 480px*/
+@import './positioning/media-tablet'; /*  ПОЗИЦИОНИРОВАНИЕ и ширина контейнера  НА 768px*/
+@import './positioning/media-desktop'; /*  ПОЗИЦИОНИРОВАНИЕ и ширина контейнера НА 1600px*/
 
 @import './components/header'; /*голова*/
 

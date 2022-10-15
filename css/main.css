@@ -9,7 +9,21 @@
 /*backgrounds*/
 /*clients*/
 /*socials*/
-/*переменные, палитра*/ /*Header Logo*/
+/*переменные, палитра*/
+/* ПОЗИЦИОНИРОВАНИЕ и ширина контейнера НА 480px*/
+@media (min-width: 768px) and (max-width: 1600px) {
+  body {
+    background-color: red;
+  }
+}
+/*  ПОЗИЦИОНИРОВАНИЕ и ширина контейнера  НА 768px*/
+@media (min-width: 1600px) {
+  body {
+    background-color: blueviolet;
+  }
+} /*  ПОЗИЦИОНИРОВАНИЕ и ширина контейнера НА 1600px*/
+/*голова*/
+/*Header Logo*/
 .header-logo {
   font-family: "Raleway";
   font-size: 24px;
@@ -50,4 +64,5 @@
 }
 
 /*дизайн логотипа БЕЗ располжения*/
-/* Общее, ул, ли, другое*//*# sourceMappingURL=main.css.map */
+/* Общее, ул, ли, ВСЕ КРОМЕ ПОЗИЦИОНИРОВАНИЯ*/
+/*ноги*//*# sourceMappingURL=main.css.map */
