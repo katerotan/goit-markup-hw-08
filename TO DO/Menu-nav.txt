@@ -1,0 +1,11 @@
+<nav class="header-nav">
+  <ul class="header-nav-list">
+    <li class="header-nav-item">
+      <a class="header-nav-link current-page" href="">Студия</a>
+    </li>
+    <li class="header-nav-item">
+      <a class="header-nav-link" href="./portfolio.html">Портфолио</a>
+    </li>
+    <li class="header-nav-item"><a class="header-nav-link" href="">Контакты</a></li>
+  </ul>
+</nav>

@@ -1,68 +1,18 @@
 @charset "UTF-8";
-/*Fonts*/
-/*Colors*/
-/*white texts*/
-/*dark texts*/
-/*white texts with shadows*/
-/*Objects*/
-/*buttons*/
-/*backgrounds*/
-/*clients*/
-/*socials*/
-/*переменные, палитра*/
-/* ПОЗИЦИОНИРОВАНИЕ и ширина контейнера НА 480px*/
-@media (min-width: 768px) and (max-width: 1600px) {
-  body {
-    background-color: red;
+/*Большие контейнеры*/
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid tomato;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
   }
 }
-/*  ПОЗИЦИОНИРОВАНИЕ и ширина контейнера  НА 768px*/
-@media (min-width: 1600px) {
-  body {
-    background-color: blueviolet;
-  }
-} /*  ПОЗИЦИОНИРОВАНИЕ и ширина контейнера НА 1600px*/
-/*голова*/
-/*Header Logo*/
-.header-logo {
-  font-family: "Raleway";
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #212121;
-  margin: 0;
-  padding: 0;
-}
 
-.header-logo-accent {
-  font-family: "Raleway";
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-
-/*Footer Logo*/
-.footer-logo {
-  font-family: "Raleway";
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-logo-accent {
-  font-family: "Raleway";
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-
-/*дизайн логотипа БЕЗ располжения*/
-/* Общее, ул, ли, ВСЕ КРОМЕ ПОЗИЦИОНИРОВАНИЯ*/
-/*ноги*//*# sourceMappingURL=main.css.map */
+/*Тело - основной контент*/
+/*Переменные*/
+/*Универсальные*/
+/*Типографика*//*# sourceMappingURL=main.css.map */

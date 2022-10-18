@@ -1,13 +1,14 @@
-@import './utils/variables'; /*переменные, палитра*/
+/*Большие контейнеры*/
+@import './01conteiner/conteiner';
+@import './01conteiner/sections';
 
-@import './positioning/media-mobile'; /* ПОЗИЦИОНИРОВАНИЕ и ширина контейнера НА 480px*/
-@import './positioning/media-tablet'; /*  ПОЗИЦИОНИРОВАНИЕ и ширина контейнера  НА 768px*/
-@import './positioning/media-desktop'; /*  ПОЗИЦИОНИРОВАНИЕ и ширина контейнера НА 1600px*/
+/*Тело - основной контент*/
+@import './02body/01header';
+@import './02body/02main';
+@import './02body/03footer';
 
-@import './components/header'; /*голова*/
+/*Переменные*/
+@import './03variables/variables';
 
-@import './components/logos'; /*дизайн логотипа БЕЗ располжения*/
-
-@import './common/body'; /* Общее, ул, ли, ВСЕ КРОМЕ ПОЗИЦИОНИРОВАНИЯ*/
-
-@import './components/footer'; /*ноги*/
+/*Универсальные*/
+@import './04univesal/universals';
