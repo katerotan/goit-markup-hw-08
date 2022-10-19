@@ -1,3 +1,6 @@
+/*Переменные*/
+@import './03variables/variables';
+
 /*Большие контейнеры*/
 @import './01conteiner/conteiner';
 @import './01conteiner/sections';
@@ -7,8 +10,8 @@
 @import './02body/02main';
 @import './02body/03footer';
 
-/*Переменные*/
-@import './03variables/variables';
+/*Тексты*/
+@import './05texts/texts';
 
 /*Универсальные*/
-@import './04univesal/universals';
+@import './04univesal/buttons';
