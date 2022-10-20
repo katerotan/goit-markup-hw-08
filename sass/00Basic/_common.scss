@@ -25,7 +25,7 @@ $description-color: #757575;
 
   @media screen and (min-width: 480px) {
     width: 480px;
-    border: 1px solid tomato;
+    /*border: 1px solid tomato;*/
   }
 
   @media screen and (min-width: 768px) {
@@ -351,21 +351,38 @@ $description-color: #757575;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid blue;
 }
 
 .clients-list-item {
   margin: 0;
   padding: 0;
   width: 210px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.clients-list-item:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.clients-list-item:nth-child(5) {
+  margin-bottom: 0px;
+}
+.clients-list-item:nth-child(6) {
+  margin-bottom: 0px;
 }
 
 .clients-list-link {
   margin: 0;
   padding: 16px 52px;
-  background-color: aqua;
+
   display: block;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list-link:hover {
+  border: 1px solid $logo-color-accent;
   border-radius: 4px;
 }
 
@@ -375,5 +392,8 @@ $description-color: #757575;
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  border: 1px solid red;
+}
+
+.clients-list-link:hover .client-icon {
+  fill: $logo-color-accent;
 }
