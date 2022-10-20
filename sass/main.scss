@@ -1,17 +1,2 @@
-/*Переменные*/
-@import './03variables/variables';
-
-/*Большие контейнеры*/
-@import './01conteiner/conteiner';
-@import './01conteiner/sections';
-
-/*Тело - основной контент*/
-@import './02body/01header';
-@import './02body/02main';
-@import './02body/03footer';
-
-/*Тексты*/
-@import './05texts/texts';
-
-/*Универсальные*/
-@import './04univesal/buttons';
+/*Первый сасс*/
+@import './00Basic/common';

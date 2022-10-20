@@ -1,37 +1,39 @@
-@charset "UTF-8";
-/*Первый сасс*/ /*ПЕРЕМЕННЫЕ*/
+/*ПЕРЕМЕННЫЕ*/
+$main-font: Roboto, Arial, sans-serif;
+$logo-font: Relaway, Arial, sans-serif;
+
+$logo-color-accent: #2196f3;
+$logo-color-basic: #212121;
+
+$hero-message-color: #ffffff;
+$button-name-color: #ffffff;
+
+$title-color: #212121;
+$description-color: #757575;
+
 /*ОБЩИЕ КОНТЕЙНЕРЫ (по медиа)*/
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .container {
+
+  @media screen and (min-width: 480px) {
     width: 480px;
     border: 1px solid tomato;
   }
-}
-@media screen and (min-width: 768px) {
-  .container {
+
+  @media screen and (min-width: 768px) {
     width: 768px;
     border: 1px solid blue;
   }
-}
-@media screen and (min-width: 1600px) {
-  .container {
+
+  @media screen and (min-width: 1600px) {
     width: 1600px;
     border: 1px solid green;
   }
@@ -44,7 +46,9 @@
 }
 
 /*--------------------СТАРТОВАЯ СТРАНИЦА-------------------*/
+
 /*1 - ХЕДЕР*/
+
 .header {
   border: 2px dashed blue;
   padding-top: 10px;
@@ -54,21 +58,19 @@
 /*ЛОГО*/
 .header-logo {
   display: block;
-  font-family: Relaway, Arial, sans-serif;
+  font-family: $logo-font;
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $logo-color-basic;
 }
-
 .header-logo-accent {
-  font-family: Relaway, Arial, sans-serif;
-  color: #2196f3;
+  font-family: $logo-font;
+  color: $logo-color-accent;
 }
-
 /*БУРГЕР МЕНЮ*/
 .burger-button {
   width: 40px;
@@ -76,23 +78,22 @@
 }
 
 /*2 - СЕКЦИЯ ГЕРОЙ*/
+
 .section-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 480px;
   height: 400px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Header\ img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header\ img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/Header\ img.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .section-hero-title {
-  font-family: Roboto, Arial, sans-serif;
-  font-family: "Roboto";
+  font-family: $main-font;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
@@ -100,27 +101,29 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $hero-message-color;
+
   margin: 0 0;
   margin-bottom: 30px;
 }
-
 .section-hero-button {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: $button-name-color;
+
   width: 200px;
   height: 50px;
   background: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+
   padding: 10px 24px;
+
   display: block;
   margin: 0 auto;
 }
@@ -137,7 +140,6 @@
   padding: 0;
   border: 1px solid red;
 }
-
 .section-specials__item:before {
   content: url(/images/antenna1.svg);
 }
@@ -145,7 +147,8 @@
 .section-specials__title {
   margin: 0;
   padding: 0;
-  font-family: Roboto, Arial, sans-serif;
+
+  font-family: $main-font;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -153,17 +156,18 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: $title-color;
 }
 
 .section-specials__description {
   margin: 0;
   padding: 0;
-  font-family: Roboto, Arial, sans-serif;
+
+  font-family: $main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
-}/*# sourceMappingURL=main.css.map */
+  color: $description-color;
+}
