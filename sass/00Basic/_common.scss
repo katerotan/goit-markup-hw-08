@@ -1,6 +1,6 @@
 /*ПЕРЕМЕННЫЕ*/
 $main-font: Roboto, Arial, sans-serif;
-$logo-font: Relaway, Arial, sans-serif;
+$logo-font: Raleway, Arial, sans-serif;
 
 $logo-color-accent: #2196f3;
 $logo-color-basic: #212121;
@@ -10,6 +10,8 @@ $button-name-color: #ffffff;
 
 $title-color: #212121;
 $description-color: #757575;
+
+$dark-background-color: #2f303a;
 
 /*ОБЩИЕ КОНТЕЙНЕРЫ (по медиа)*/
 .flex {
@@ -394,4 +396,26 @@ $description-color: #757575;
 
 .clients-list-link:hover .client-icon {
   fill: $logo-color-accent;
+}
+
+/*7 - ФУТЕР*/
+.footer {
+  background-color: $dark-background-color;
+}
+.footer-logo {
+  display: block;
+  font-family: $logo-font;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $hero-message-color;
+}
+
+.footer-logo-accent {
+  font-family: $logo-font;
+  color: $logo-color-accent;
 }

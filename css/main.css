@@ -52,7 +52,7 @@
 /*ЛОГО*/
 .header-logo {
   display: block;
-  font-family: Relaway, Arial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
@@ -63,7 +63,7 @@
 }
 
 .header-logo-accent {
-  font-family: Relaway, Arial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   color: #2196f3;
 }
 
@@ -402,4 +402,27 @@
 
 .clients-list-link:hover .client-icon {
   fill: #2196f3;
+}
+
+/*7 - ФУТЕР*/
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  display: block;
+  font-family: Raleway, Arial, sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-logo-accent {
+  font-family: Raleway, Arial, sans-serif;
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
