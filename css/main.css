@@ -333,4 +333,55 @@
 
 .socials-list-link:hover .social-icon {
   fill: #ffffff;
+}
+
+/*6 - ПОСТОЯННЫЕ КЛИЕНТЫ*/
+.section-clients-title {
+  margin: 0;
+  padding-bottom: 30px;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.clients-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid blue;
+}
+
+.clients-list-item {
+  margin: 0;
+  padding: 0;
+  width: 210px;
+}
+
+.clients-list-link {
+  margin: 0;
+  padding: 16px 52px;
+  background-color: aqua;
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-icon {
+  margin: 0;
+  padding: 0;
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  border: 1px solid red;
 }/*# sourceMappingURL=main.css.map */
