@@ -38,7 +38,6 @@
 }
 
 .section {
-  border: 2px dashed blue;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -46,7 +45,6 @@
 /*--------------------СТАРТОВАЯ СТРАНИЦА-------------------*/
 /*1 - ХЕДЕР*/
 .header {
-  border: 2px dashed blue;
   padding-top: 10px;
   padding-bottom: 10px;
 }
