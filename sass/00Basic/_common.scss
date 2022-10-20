@@ -200,7 +200,12 @@ $dark-background-color: #2f303a;
 }
 
 /*4 - ЧЕМ МЫ ЗАНИМАЕМСЯ - СКРЫТА*/
-
+.section-tasks {
+  @media screen and (min-width: 480px) {
+    display: none;
+    /*border: 1px solid tomato;*/
+  }
+}
 /*5 - НАША КОМАНДА*/
 .section-team {
   background-color: #f5f4fa;
@@ -402,6 +407,8 @@ $dark-background-color: #2f303a;
 .footer {
   background-color: $dark-background-color;
 }
+
+/*Лого*/
 .footer-logo {
   display: block;
   font-family: $logo-font;
@@ -418,4 +425,213 @@ $dark-background-color: #2f303a;
 .footer-logo-accent {
   font-family: $logo-font;
   color: $logo-color-accent;
+}
+
+/*Адрес*/
+
+.footer-address {
+  margin-top: 20px;
+  padding: 0;
+}
+.footer-address-item_location {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $hero-message-color;
+}
+
+.footer-address-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-address-item-email {
+  margin-top: 8px;
+}
+
+.footer-address-item-phone {
+  margin-top: 8px;
+}
+
+.footer-address-link {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*Социалки*/
+
+.footer-socials {
+  margin-top: 60px;
+}
+
+.footer-socials-title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $hero-message-color;
+}
+
+.webstudio-socials-list {
+  list-style: none;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.webstudio-socials-list-item {
+  margin: 0;
+  padding: 0;
+}
+
+.webstudio-socials-list-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+}
+
+.webstudio-socials-list-link:hover {
+  background-color: $logo-color-accent;
+  border-radius: 50%;
+}
+
+.webstudio-social-icon {
+  display: block;
+  margin: 10px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.webstudio-socials-list-link:hover .webstudio-social-icon {
+  fill: #ffffff;
+}
+
+/*Подпись на рассылку*/
+.footer-email {
+  margin-top: 60px;
+}
+
+.footer-email-title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $hero-message-color;
+}
+
+.footer-email-input {
+  margin-top: 20px;
+}
+
+.footer-email-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & input {
+    padding: 15px 16px;
+    min-width: 450px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-email-input input:hover {
+  border: 1px solid #2196f3;
+}
+
+.form-input-btn-email {
+  margin: 0 auto;
+  padding: 10px 24px;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe {
+  display: block;
+  margin-right: 12px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $button-name-color;
+}
+
+.icon-icon-send {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
 }

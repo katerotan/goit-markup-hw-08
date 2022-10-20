@@ -196,6 +196,13 @@
 }
 
 /*4 - ЧЕМ МЫ ЗАНИМАЕМСЯ - СКРЫТА*/
+@media screen and (min-width: 480px) {
+  .section-tasks {
+    display: none;
+    /*border: 1px solid tomato;*/
+  }
+}
+
 /*5 - НАША КОМАНДА*/
 .section-team {
   background-color: #f5f4fa;
@@ -409,6 +416,7 @@
   background-color: #2f303a;
 }
 
+/*Лого*/
 .footer-logo {
   display: block;
   font-family: Raleway, Arial, sans-serif;
@@ -425,4 +433,223 @@
 .footer-logo-accent {
   font-family: Raleway, Arial, sans-serif;
   color: #2196f3;
+}
+
+/*Адрес*/
+.footer-address {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.footer-address-item_location {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-address-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-address-item-email {
+  margin-top: 8px;
+}
+
+.footer-address-item-phone {
+  margin-top: 8px;
+}
+
+.footer-address-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*Социалки*/
+.footer-socials {
+  margin-top: 60px;
+}
+
+.footer-socials-title {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.webstudio-socials-list {
+  list-style: none;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.webstudio-socials-list-item {
+  margin: 0;
+  padding: 0;
+}
+
+.webstudio-socials-list-link {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.webstudio-socials-list-link:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.webstudio-social-icon {
+  display: block;
+  margin: 10px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.webstudio-socials-list-link:hover .webstudio-social-icon {
+  fill: #ffffff;
+}
+
+/*Подпись на рассылку*/
+.footer-email {
+  margin-top: 60px;
+}
+
+.footer-email-title {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-email-input {
+  margin-top: 20px;
+}
+
+.footer-email-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.footer-email-input input {
+  padding: 15px 16px;
+  min-width: 450px;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-email-input input:hover {
+  border: 1px solid #2196f3;
+}
+
+.form-input-btn-email {
+  margin: 0 auto;
+  padding: 10px 24px;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe {
+  display: block;
+  margin-right: 12px;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.icon-icon-send {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
 }/*# sourceMappingURL=main.css.map */
