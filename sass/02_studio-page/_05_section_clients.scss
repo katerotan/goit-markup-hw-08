@@ -1,4 +1,6 @@
 /*6 - ПОСТОЯННЫЕ КЛИЕНТЫ*/
+
+
 .section-clients-title {
   margin: 0;
   padding-bottom: 30px;
@@ -20,6 +22,7 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .clients-list-item {
@@ -28,10 +31,16 @@
   width: 210px;
   margin-right: 30px;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 210px;
+  }
 }
 
 .clients-list-item:nth-child(2n) {
   margin-right: 0px;
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
 }
 
 .clients-list-item:nth-child(5) {
@@ -39,6 +48,18 @@
 }
 .clients-list-item:nth-child(6) {
   margin-bottom: 0px;
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-item:nth-child(3) {
+    margin-right: 0px;
+  }
+  .clients-list-item:nth-child(4) {
+    margin-bottom: 0px;
+  }
 }
 
 .clients-list-link {

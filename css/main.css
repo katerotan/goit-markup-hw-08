@@ -203,12 +203,31 @@
   color: #2196f3;
 }
 
-/*--------------------СТАРТОВАЯ СТРАНИЦА-------------------*/
 /*7 - ФУТЕР*/
 .footer {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 768px) {
+  .direction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 76px;
+    padding-right: 89px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .direction .footer-contacts {
+    margin-right: 165px;
+  }
+  .direction .footer-email {
+    margin-top: 60px;
+  }
+}
 /*Лого*/
 .footer-logo {
   display: block;
@@ -838,6 +857,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clients-list-item {
@@ -847,9 +869,19 @@
   margin-right: 30px;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    width: 210px;
+  }
+}
 
 .clients-list-item:nth-child(2n) {
   margin-right: 0px;
+}
+@media screen and (min-width: 768px) {
+  .clients-list-item:nth-child(2n) {
+    margin-right: 30px;
+  }
 }
 
 .clients-list-item:nth-child(5) {
@@ -859,7 +891,20 @@
 .clients-list-item:nth-child(6) {
   margin-bottom: 0px;
 }
+@media screen and (min-width: 768px) {
+  .clients-list-item:nth-child(6) {
+    margin-right: 0px;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .clients-list-item:nth-child(3) {
+    margin-right: 0px;
+  }
+  .clients-list-item:nth-child(4) {
+    margin-bottom: 0px;
+  }
+}
 .clients-list-link {
   margin: 0;
   padding: 16px 52px;

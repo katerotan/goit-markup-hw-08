@@ -1,11 +1,28 @@
-/*--------------------СТАРТОВАЯ СТРАНИЦА-------------------*/
-
-
-
-
 /*7 - ФУТЕР*/
+
 .footer {
   background-color: $dark-background-color;
+}
+
+@media screen and (min-width: 768px) {
+  .direction {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 76px;
+    padding-right: 89px;
+    justify-content: center;
+
+    .footer-contacts {
+      margin-right: 165px;
+    }
+
+    .footer-socials {
+    }
+
+    .footer-email {
+      margin-top: 60px;
+    }
+  }
 }
 
 /*Лого*/
