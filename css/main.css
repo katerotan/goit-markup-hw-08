@@ -31,13 +31,21 @@
 @media screen and (min-width: 1600px) {
   .container {
     width: 1600px;
-    border: 1px solid green;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    border: 2px dashed blue;
+  }
 }
 
 /*ПЕРЕМЕННЫЕ*/
@@ -54,6 +62,12 @@
     padding-bottom: 15px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 /*ЛОГО*/
 .header-logo {
@@ -66,6 +80,12 @@
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1600px) {
+  .header-logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
 }
 
 .header-logo-accent {
@@ -495,6 +515,17 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_img768.jpg);
   }
 }
+@media screen and (min-width: 1600px) {
+  .section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header_img1600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_img1600.jpg);
+  }
+}
 
 .section-hero-title {
   font-family: Roboto, Arial, sans-serif;
@@ -517,6 +548,13 @@
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .section-hero-title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
 
 .section-hero-button {
   font-family: Roboto, Arial, sans-serif;
@@ -527,7 +565,6 @@
   letter-spacing: 0.06em;
   color: #ffffff;
   width: 200px;
-  height: 50px;
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -536,6 +573,12 @@
   padding: 10px 24px;
   display: block;
   margin: 0 auto;
+}
+@media screen and (min-width: 1600px) {
+  .section-hero-button {
+    padding: 10px 32px;
+    width: 216px;
+  }
 }
 
 /*3 - ОСОБЕННОСТИ*/
@@ -566,6 +609,11 @@
     width: 354px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .section-specials__item {
+    width: 270px;
+  }
+}
 
 .section-specials__item:nth-child(n+2) {
   margin-top: 30px;
@@ -583,6 +631,14 @@
   .section-specials__item:nth-child(1),
 .section-specials__item:nth-child(3) {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section-specials__item:nth-child(2) {
+    margin-right: 30px;
+  }
+  .section-specials__item:nth-child(-n+2) {
+    margin-bottom: 0px;
   }
 }
 .section-specials__item:before {
@@ -648,16 +704,68 @@
 @media screen and (min-width: 480px) {
   .section-tasks {
     display: none;
-    /*border: 1px solid tomato;*/
   }
 }
 @media screen and (min-width: 768px) {
   .section-tasks {
     display: none;
-    /*border: 1px solid tomato;*/
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section-tasks {
+    display: block;
+    padding-top: 24px;
   }
 }
 
+/*Все стили для секции, как мы работаем*/
+@media screen and (min-width: 1600px) {
+  .section-tasks__title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .section-tasks__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  .section-tasks__item {
+    position: relative;
+  }
+  .section-tasks__item-img {
+    display: block;
+  }
+  .section-tasks__item-img-overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 80px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
 /*5 - НАША КОМАНДА*/
 .section-team {
   background-color: #f5f4fa;

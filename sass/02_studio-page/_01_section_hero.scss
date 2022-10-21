@@ -20,6 +20,16 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/Header_img768.jpg);
   }
+
+  @media screen and (min-width: 1600px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Header_img1600.jpg);
+  }
 }
 
 .section-hero-title {
@@ -42,6 +52,12 @@
     margin: 0 auto;
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: 1600px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 .section-hero-button {
   font-family: $main-font;
@@ -53,7 +69,7 @@
   color: $button-name-color;
 
   width: 200px;
-  height: 50px;
+
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -63,4 +79,9 @@
 
   display: block;
   margin: 0 auto;
+
+  @media screen and (min-width: 1600px) {
+    padding: 10px 32px;
+    width: 216px;
+  }
 }

@@ -1,12 +1,64 @@
-
 /*4 - ЧЕМ МЫ ЗАНИМАЕМСЯ - СКРЫТА*/
 .section-tasks {
   @media screen and (min-width: 480px) {
     display: none;
-    /*border: 1px solid tomato;*/
   }
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
-    /*border: 1px solid tomato;*/
+  }
+  @media screen and (min-width: 1600px) {
+    display: block;
+    padding-top: 24px;
+  }
+}
+/*Все стили для секции, как мы работаем*/
+
+@media screen and (min-width: 1600px) {
+  .section-tasks__title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 0;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+  }
+
+  .section-tasks__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+
+  .section-tasks__item {
+    position: relative;
+  }
+  .section-tasks__item-img {
+    display: block;
+  }
+
+  .section-tasks__item-img-overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+
+    padding: 27px 80px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $hero-message-color;
   }
 }
