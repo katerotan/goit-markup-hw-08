@@ -224,6 +224,9 @@
   .direction .footer-contacts {
     margin-right: 165px;
   }
+  .direction .footer-socials {
+    margin-top: 0px;
+  }
   .direction .footer-email {
     margin-top: 60px;
   }
