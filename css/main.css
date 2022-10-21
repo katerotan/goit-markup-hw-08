@@ -501,12 +501,10 @@
     gap: 12px;
   }
 }
-
-.footer-email-input input:hover {
+.footer-email-input .footer-email-input input:hover {
   border: 1px solid #2196f3;
 }
-
-.form-input-btn-email {
+.footer-email-input .form-input-btn-email {
   margin: 0 auto;
   padding: 10px 24px;
   width: 200px;
@@ -517,8 +515,7 @@
   border: none;
   border-radius: 4px;
 }
-
-.test {
+.footer-email-input .test {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,8 +526,7 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.subscribe {
+.footer-email-input .subscribe {
   display: block;
   margin-right: 12px;
   font-family: Roboto, Arial, sans-serif;
@@ -541,8 +537,7 @@
   letter-spacing: 0.06em;
   color: #ffffff;
 }
-
-.icon-icon-send {
+.footer-email-input .icon-icon-send {
   display: block;
   margin: 0;
   padding: 0;
