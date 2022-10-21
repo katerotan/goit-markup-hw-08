@@ -84,14 +84,18 @@ $dark-background-color: #2f303a;
 }
 
 .burger-button .icon-cross {
-  display: none;
-}
-
-.burger-button.is-open .icon-cross {
   display: block;
 }
 
+.burger-button .icon-menu {
+  display: none;
+}
+
 .burger-button.is-open .icon-menu {
+  display: block;
+}
+
+.burger-button.is-open .icon-cross {
   display: none;
 }
 
@@ -102,7 +106,7 @@ $dark-background-color: #2f303a;
 }
 
 .menu-container {
-  display: none;
+  display: block;
   margin: 0 auto;
 
   position: absolute;
@@ -113,8 +117,9 @@ $dark-background-color: #2f303a;
 }
 
 .menu-container.is-open {
-  display: block;
+  display: none;
 }
+
 /*Меню - страницы*/
 .header-nav-list {
   margin: 0;
