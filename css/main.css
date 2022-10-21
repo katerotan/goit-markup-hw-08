@@ -250,6 +250,23 @@
     margin-top: 60px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .direction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .direction .footer-contacts {
+    margin-right: 70px;
+  }
+  .direction .footer-socials {
+    margin-top: 0px;
+    margin-right: 93px;
+  }
+  .direction .footer-email {
+    margin-top: 0px;
+  }
+}
 /*Лого*/
 .footer-logo {
   display: block;
@@ -262,6 +279,13 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: #ffffff;
+}
+@media screen and (min-width: 1600px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 31px;
+    text-align: left;
+  }
 }
 
 .footer-logo-accent {
@@ -287,6 +311,11 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+@media screen and (min-width: 1600px) {
+  .footer-address-item_location {
+    text-align: left;
+  }
+}
 
 .footer-address-list {
   margin: 0;
@@ -297,9 +326,19 @@
 .footer-address-item-email {
   margin-top: 8px;
 }
+@media screen and (min-width: 1600px) {
+  .footer-address-item-email {
+    margin-top: 9px;
+  }
+}
 
 .footer-address-item-phone {
   margin-top: 8px;
+}
+@media screen and (min-width: 1600px) {
+  .footer-address-item-phone {
+    margin-top: 9px;
+  }
 }
 
 .footer-address-link {
@@ -315,6 +354,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1600px) {
+  .footer-address-link {
+    text-align: left;
+  }
 }
 
 /*Социалки*/
@@ -409,6 +453,11 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1600px) {
+  .footer-email-title {
+    text-align: left;
+  }
+}
 
 .footer-email-input {
   margin-top: 20px;
@@ -437,6 +486,20 @@
   background-color: transparent;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1600px) {
+  .footer-email-input input {
+    min-width: 358px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .footer-email-input {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
 }
 
 .footer-email-input input:hover {

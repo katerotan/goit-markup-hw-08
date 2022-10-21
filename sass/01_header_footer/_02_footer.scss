@@ -26,6 +26,25 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .direction {
+    display: flex;
+
+    .footer-contacts {
+      margin-right: 70px;
+    }
+
+    .footer-socials {
+      margin-top: 0px;
+      margin-right: 93px;
+    }
+
+    .footer-email {
+      margin-top: 0px;
+    }
+  }
+}
+
 /*Лого*/
 .footer-logo {
   display: block;
@@ -38,6 +57,12 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: $hero-message-color;
+
+  @media screen and (min-width: 1600px) {
+    font-size: 26px;
+    line-height: 31px;
+    text-align: left;
+  }
 }
 
 .footer-logo-accent {
@@ -62,6 +87,9 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $hero-message-color;
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 .footer-address-list {
@@ -72,10 +100,16 @@
 
 .footer-address-item-email {
   margin-top: 8px;
+  @media screen and (min-width: 1600px) {
+    margin-top: 9px;
+  }
 }
 
 .footer-address-item-phone {
   margin-top: 8px;
+  @media screen and (min-width: 1600px) {
+    margin-top: 9px;
+  }
 }
 
 .footer-address-link {
@@ -95,6 +129,9 @@
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 /*Социалки*/
@@ -184,6 +221,9 @@
   text-transform: uppercase;
 
   color: $hero-message-color;
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 .footer-email-input {
@@ -210,6 +250,14 @@
     background-color: transparent;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1600px) {
+      min-width: 358px;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    flex-direction: row;
+    gap: 12px;
   }
 }
 
