@@ -260,44 +260,44 @@
     gap: 12px;
   }
 
+  .footer-email-input input:hover {
+    border: 1px solid #2196f3;
+  }
 
-.footer-email-input input:hover {
-  border: 1px solid #2196f3;
-}
+  .form-input-btn-email {
+    margin: 0 auto;
+    padding: 10px 24px;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+  }
 
-.form-input-btn-email {
-  margin: 0 auto;
-  padding: 10px 24px;
-  width: 200px;
-  height: 50px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-}
+  .test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe {
+    display: block;
+    margin-right: 12px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $button-name-color;
+  }
 
-.test {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.subscribe {
-  display: block;
-  margin-right: 12px;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  color: $button-name-color;
-}
-
-.icon-icon-send {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
+  .icon-icon-send {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+  }
 }
