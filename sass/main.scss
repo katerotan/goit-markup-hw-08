@@ -1,2 +1,12 @@
-/*Первый сасс*/
-@import './00Basic/common';
+/*Переменные и Контейнеры*/
+@import './00_vars_and_contrs/conteiners';
+@import './00_vars_and_contrs/vars';
+/*Хедер и Футер*/
+@import './01_header_footer/01_header';
+@import './01_header_footer/02_footer';
+/*Студио Пейдж*/
+@import './02_studio-page/01_section_hero';
+@import './02_studio-page/02_section_osob';
+@import './02_studio-page/03_section_tasks';
+@import './02_studio-page/04_section_team';
+@import './02_studio-page/05_section_clients';

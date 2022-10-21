@@ -1,0 +1,66 @@
+/*2 - СЕКЦИЯ ГЕРОЙ*/
+
+.section-hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  display: flex;
+  max-width: 480px;
+  height: 400px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Header_img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Header_img768.jpg);
+  }
+}
+
+.section-hero-title {
+  font-family: $main-font;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $hero-message-color;
+
+  margin: 0 0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+.section-hero-button {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $button-name-color;
+
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  padding: 10px 24px;
+
+  display: block;
+  margin: 0 auto;
+}
