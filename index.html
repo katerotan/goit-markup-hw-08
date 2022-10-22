@@ -36,7 +36,7 @@
       <a class="header-logo" href="" lang="en"><span class="header-logo-accent">Web</span>Studio</a>
       <!--Бургер-->
       <button type="buttom" class="burger-button is-open" aria-expanded="false" data-menu-button>
-        
+
         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
           <use class="icon-menu" href="./images/open-close.svg#icon-menu_24px"></use>
           <use class="icon-cross" href="./images/open-close.svg#icon-close_24px"></use>
@@ -93,8 +93,69 @@
     <section class="section-hero">
       <div class="container">
         <h1 class="section-hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button class="section-hero-button" type="button">Заказать услугу</button>
-        <!--ТУТ ДОЛЖНО БЫТЬ МОДАЛЬНОЕ ОКНО и БЭКДРОП-->
+        <button data-modal-open class="section-hero-button" type="button">Заказать услугу</button>
+        
+        <!--------БЕКДРОП---------->
+        <div data-modal class="backdrop is-hidden">
+          <div class="modal">
+            <button data-modal-close class="close-modal-btn">
+              <svg class="btn-close">
+                <use href="./images/close.svg#icon-close"></use>
+              </svg>
+            </button>
+            <!------- Формы в модалке---------->
+            <form class="form">
+              <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+              <!--Имя-->
+              <div class="form-field">
+                <label class="label-name-tel-email-comm" for="name">Имя</label>
+                <input class="form-input" type="text" name="name" id="name" placeholder=" " autofocus />
+                <svg class="icon-name">
+                  <use href="./images/symbol-modals.svg#icon-name"></use>
+                </svg>
+              </div>
+              <!--Тел-->
+              <div class="form-field">
+                <label class="label-name-tel-email-comm" for="tel">Телефон</label>
+                <input class="form-input" type="tel" name="phone_number" id="tel" placeholder="" />
+                <svg class="icon-tel">
+                  <use href="./images/symbol-modals.svg#icon-tel"></use>
+                </svg>
+              </div>
+              <!--Почта-->
+              <div class="form-field">
+                <label class="label-name-tel-email-comm" for="email">Почта</label>
+                <input class="form-input" type="email" name="email" id="email" placeholder="" />
+                <svg class="icon-mail">
+                  <use href="./images/symbol-modals.svg#icon-mail"></use>
+                </svg>
+              </div>
+              <!--Комментарий-->
+              <div class="form-field">
+                <label class="label-name-tel-email-comm" for="comments">Комментарий</label>
+                <textarea class="comment" name="comments" id="comments" placeholder="Введите текст"></textarea>
+              </div>
+              <!--Полиси-->
+              <div class="form-field">
+                <!--Построение как у Репеты-->
+                <label class="label-policy" for="policy">
+                  <input class="checkbox" id="policy" type="checkbox" name="policy"
+                    value="Согласен с рассылкой и Условиями договора" />
+                  <svg class="icon-icon-checked">
+                    <use href="./images/symbol-modals.svg#icon-icon-check" />
+                  </svg>
+                  <svg class="icon-icon-check">
+                    <use href="./images/symbol-modals.svg#icon-Vector" />
+                  </svg>
+                  Согласен с рассылкой и <a href="">Условиями договора</a>
+                </label>
+              </div>
+              <!--Кнопка отправить-->
+
+              <button class="form-input-btn-submit" type=" submit">Отправить</button>
+            </form>
+          </div>
+        </div>
       </div>
       </div>
     </section>
