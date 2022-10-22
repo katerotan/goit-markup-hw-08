@@ -1,8 +1,5 @@
 /*Общая секция для декораций*/
 
-.section-filters-portfolio {
-}
-
 /*Кнопки фильтра*/
 .section-filters-btn-list {
   list-style: none;
@@ -13,9 +10,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-}
 
-.section-filters-btn-list-item {
+  @media screen and (min-width: 1600px) {
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .section-filters-btn-list-btn {
