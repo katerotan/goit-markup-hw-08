@@ -674,7 +674,6 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 450px;
-  height: 609px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -728,7 +727,7 @@
   padding: 0;
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   color: #212121;
 }
@@ -823,7 +822,7 @@ textarea::placeholder {
 .comment {
   padding: 12px 16px;
   resize: none;
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -836,6 +835,7 @@ textarea::placeholder {
 
 /*--Кнопака--*/
 .form-input-btn-submit {
+  margin: 0 auto;
   margin-top: 30px;
   font-family: inherit;
   font-weight: 700;
@@ -844,7 +844,7 @@ textarea::placeholder {
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
-  display: inline-block; /*для кнопок баттон и ссылок-кнопок - обязательно*/
+  display: block; /*для кнопок баттон и ссылок-кнопок - обязательно*/
   min-width: 200px;
   height: 50px;
   border-radius: 4px;
