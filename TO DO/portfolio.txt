@@ -1,0 +1,22 @@
+.portfolio-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  background: rgba(33, 150, 243, 0.9);
+  color: $hero-title-color;
+
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .section-portfolio-item-link:hover & {
+    transform: translatey(0);
+  }
