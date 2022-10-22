@@ -1,0 +1,84 @@
+.section-portfolio-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.section-portfolio-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*Коробка для карточки портфоли*/
+.portfolio-box {
+  width: 450px;
+}
+
+/*Картинка*/
+.section-portfolio-item-link {
+  text-decoration: none;
+}
+
+.section-portfolio-item-img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 450px;
+  height: 294px;
+}
+
+/*Выпадающий слой*/
+.portfolio-overlay {
+  padding: 77px 24px;
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-overlay-message {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/*Подпись к картинке*/
+.card {
+  margin: 0;
+  padding: 0;
+  padding: 20px 24px;
+}
+
+.section-portfolio-item-title {
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.section-portfolio-item-description {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-decoration: none;
+}
