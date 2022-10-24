@@ -1324,22 +1324,22 @@ textarea:focus-visible {
     margin-right: 0px;
   }
 }
+.section-team-item-img {
+  max-width: 100%;
+}
 @media screen and (min-width: 480px) {
   .section-team-item-img {
     width: 450px;
-    height: 460px;
   }
 }
 @media screen and (min-width: 768px) {
   .section-team-item-img {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1600px) {
   .section-team-item-img {
     width: 270px;
-    height: 260px;
   }
 }
 
