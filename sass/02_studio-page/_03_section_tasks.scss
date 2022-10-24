@@ -1,5 +1,7 @@
 /*4 - ЧЕМ МЫ ЗАНИМАЕМСЯ - СКРЫТА*/
 .section-tasks {
+  display: none;
+
   @media screen and (min-width: 480px) {
     display: none;
   }

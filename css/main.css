@@ -558,8 +558,8 @@
   max-width: 480px;
   height: 400px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header_img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header_img1600.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_img1600.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1144,6 +1144,9 @@ textarea:focus-visible {
 }
 
 /*4 - ЧЕМ МЫ ЗАНИМАЕМСЯ - СКРЫТА*/
+.section-tasks {
+  display: none;
+}
 @media screen and (min-width: 480px) {
   .section-tasks {
     display: none;
@@ -1321,12 +1324,11 @@ textarea:focus-visible {
     margin-right: 0px;
   }
 }
-.section-team-item-img {
-  width: 450px;
-  height: 460px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (min-width: 480px) {
+  .section-team-item-img {
+    width: 450px;
+    height: 460px;
+  }
 }
 @media screen and (min-width: 768px) {
   .section-team-item-img {
