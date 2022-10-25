@@ -1,20 +1,5 @@
 /*1 - ХЕДЕР*/
 
-.header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ececec;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  @media screen and (min-width: 1600px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
-
 /*ЛОГО*/
 .header-logo {
   display: block;

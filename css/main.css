@@ -51,24 +51,6 @@
 /*Переменные расширений*/
 /*Хедер и Футер*/
 /*1 - ХЕДЕР*/
-.header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ececec;
-}
-@media screen and (min-width: 768px) {
-  .header {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
-
 /*ЛОГО*/
 .header-logo {
   display: block;
@@ -419,6 +401,268 @@
   width: 24px;
   height: 24px;
   fill: #ffffff;
+}
+
+/*---------------------------------------МЕНЮ КОНТЕЙНЕР---------------------------------------*/
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.menu-container {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    position: initial;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .menu-container {
+    position: initial;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-left: 93px;
+  }
+}
+
+/*---------------------------------------Бургер меню--------------------------------------*/
+.menu-button {
+  /*кнопка есть до 767*/
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    /*кнопки нет с 768*/
+    display: none;
+  }
+}
+
+.menu-button-switch {
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+}
+
+/*Условия для бургер меню*/
+.menu-button.is-open .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-open {
+  /*изначально черточки*/
+  display: block;
+}
+
+.menu-button .icon-open {
+  display: none;
+}
+
+.menu-button .icon-close {
+  /*при нажатии на черточки - крестик*/
+  display: block;
+}
+
+/*Условия для меню*/
+.menu-container.is-open {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-container.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 85px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .menu-container.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 315px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*---------------------------------------НАВИГАЦИЯ И КОНТАКТЫ в конт.------------------------------*/
+/*------------Декорируем меню---------*/
+.header-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav-list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    margin: auto 0;
+  }
+}
+
+.header-nav-item {
+  margin-bottom: 10px;
+}
+.header-nav-item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-item {
+    margin-bottom: 0px;
+  }
+}
+
+.header-nav-link {
+  display: block;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.current-page {
+  color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .current-page {
+    border-bottom: 4px solid #2196f3;
+    border-radius: 2px;
+  }
+}
+
+/*------------Декорируем список контактов------------*/
+.header-contacts-list {
+  list-style: none;
+  margin: 0;
+  margin-top: 306px;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .header-contacts-list {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-contacts-list {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.header-contacts-item {
+  margin-bottom: 10px;
+}
+.header-contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+.phone-text,
+.email-text {
+  display: block;
+}
+
+.header-contacts-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .header-contacts-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
+.icon-envelope {
+  display: block;
+  margin-right: 8px;
+  width: 10px;
+  height: 14px;
+  fill: #757575;
+}
+@media screen and (max-width: 767px) {
+  .icon-envelope {
+    display: none;
+  }
+}
+
+.icon-smartphone {
+  display: block;
+  margin-right: 8px;
+  width: 14px;
+  height: 10px;
+  fill: #757575;
+}
+@media screen and (max-width: 767px) {
+  .icon-smartphone {
+    display: none;
+  }
 }
 
 /*Студио Пейдж*/
