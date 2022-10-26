@@ -584,6 +584,16 @@
 .header-nav-link {
   text-decoration: none;
 }
+@media screen and (max-width: 480px) {
+  .header-nav-link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
 @media screen and (min-width: 480px) {
   .header-nav-link {
     font-family: "Roboto";
@@ -611,6 +621,11 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .current-page {
+    color: #2196f3;
+  }
+}
 @media screen and (min-width: 480px) {
   .current-page {
     color: #2196f3;
