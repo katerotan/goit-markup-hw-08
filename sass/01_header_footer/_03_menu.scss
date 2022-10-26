@@ -152,6 +152,15 @@
 }
 .header-nav-link {
   text-decoration: none;
+
+  @media screen and (max-width: 480px) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
   @media screen and (min-width: 480px) {
     font-family: 'Roboto';
     font-weight: 500;
