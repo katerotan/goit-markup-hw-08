@@ -1902,7 +1902,7 @@ textarea:focus-visible {
 }
 
 .section-portfolio-item {
-  width: 450px;
+  max-width: 450px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1977,8 +1977,16 @@ textarea:focus-visible {
   margin: 0;
   padding: 0;
   display: block;
-  width: 450px;
-  height: 294px;
+}
+@media screen and (max-width: 480px) {
+  .section-portfolio-item-img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .section-portfolio-item-img {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .section-portfolio-item-img {
