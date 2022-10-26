@@ -412,14 +412,14 @@
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 1600px) {
   .header {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -439,6 +439,9 @@
     padding-left: 0px;
     padding-bottom: 0px;
     margin-left: 88px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -503,10 +506,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 85px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -514,24 +516,17 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 315px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
 /*---------------------------------------НАВИГАЦИЯ И КОНТАКТЫ в конт.------------------------------*/
-/*------------Декорируем меню---------*/
-.header-nav {
-  margin: 0;
-  padding: 0;
-}
-
+/*---------------------------------------------------НАВИГАЦИЯ--------------------------------*/
 .header-nav-list {
   list-style: none;
   margin: 0;
-  margin-bottom: 50px;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
@@ -539,130 +534,260 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 50px;
-    margin: auto 0;
+    gap: 45px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 47px;
   }
 }
 
-.header-nav-item {
-  margin-bottom: 10px;
+@media screen and (max-width: 480px) {
+  .header-nav-item {
+    margin-bottom: 32px;
+  }
+  .header-nav-item:last-child {
+    margin-bottom: 0px;
+  }
 }
-.header-nav-item:last-child {
-  margin-bottom: 0;
+@media screen and (min-width: 480px) {
+  .header-nav-item {
+    margin-bottom: 32px;
+  }
+  .header-nav-item:last-child {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-nav-item {
+    padding: 21px 0;
+    margin-bottom: 0px;
+  }
+  .header-nav-item:last-child {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-nav-item {
+    padding: 32px 0;
+    margin-bottom: 0px;
+  }
+  .header-nav-item:last-child {
     margin-bottom: 0px;
   }
 }
 
 .header-nav-link {
-  display: block;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
   text-decoration: none;
-  color: #212121;
+}
+@media screen and (min-width: 480px) {
+  .header-nav-link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-nav-link {
+    padding: 21px 0px;
+    font-family: "Roboto";
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-nav-link {
+    padding: 29.5px 0px;
   }
 }
 
-.current-page {
-  color: #2196f3;
+@media screen and (min-width: 480px) {
+  .current-page {
+    color: #2196f3;
+  }
 }
 @media screen and (min-width: 768px) {
   .current-page {
     border-bottom: 4px solid #2196f3;
-    border-radius: 2px;
+    color: #2196f3;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .current-page {
+    border-bottom: 4px solid #2196f3;
+    color: #2196f3;
   }
 }
 
-/*------------Декорируем список контактов------------*/
+/*---------------------------------------------------КОНТАКТЫ--------------------------------*/
 .header-contacts-list {
   list-style: none;
   margin: 0;
-  margin-top: 306px;
   padding: 0;
+}
+@media screen and (max-width: 480px) {
+  .header-contacts-list {
+    margin-top: 302px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header-contacts-list {
+    margin-top: 302px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-contacts-list {
+    padding: 12.5px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 0px;
+    margin-left: 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 1600px) {
   .header-contacts-list {
-    margin-top: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 30px;
+    padding: 32px 0px;
+    margin-left: 312px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
-.header-contacts-item {
-  margin-bottom: 10px;
+@media screen and (max-width: 480px) {
+  .header-contacts-item {
+    margin-bottom: 32px;
+  }
+  .header-contacts-item:last-child {
+    margin-bottom: 0px;
+  }
 }
-.header-contacts-item:last-child {
-  margin-bottom: 0;
+@media screen and (min-width: 480px) {
+  .header-contacts-item {
+    margin-bottom: 32px;
+  }
+  .header-contacts-item:last-child {
+    margin-bottom: 0px;
+  }
 }
-
-.phone-text,
-.email-text {
-  display: block;
+@media screen and (min-width: 768px) {
+  .header-contacts-item {
+    margin-bottom: 0px;
+  }
+  .header-contacts-item:last-child {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-contacts-item {
+    margin-bottom: 0px;
+    margin-right: 32px;
+  }
+  .header-contacts-item:last-child {
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
 }
 
 .header-contacts-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  color: #2196f3;
   text-decoration: none;
 }
+.icon-envelope {
+  fill: #757575;
+  width: 14px;
+  height: 10px;
+  /*не видно ДО 480 включительно*/
+  /*не видно ОТ 480 включительно*/
+  /*видно ОТ 768 включительно*/
+}
+@media screen and (max-width: 480px) {
+  .icon-envelope {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .icon-envelope {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
-  .header-contacts-link {
-    font-style: normal;
+  .icon-envelope {
+    display: initial;
+  }
+}
+
+.icon-smartphone {
+  fill: #757575;
+  width: 10px;
+  height: 14px;
+  /*не видно ДО 480 включительно*/
+  /*не видно ОТ 480 включительно*/
+  /*видно ОТ 768 включительно*/
+}
+@media screen and (max-width: 480px) {
+  .icon-smartphone {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .icon-smartphone {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .icon-smartphone {
+    display: initial;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .email-text,
+.phone-text {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+@media screen and (min-width: 768px) {
+  .email-text,
+.phone-text {
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.02em;
     color: #757575;
+    margin-left: 8px;
   }
 }
-
-.icon-envelope {
-  display: block;
-  margin-right: 8px;
-  width: 10px;
-  height: 14px;
-  fill: #757575;
-}
-@media screen and (max-width: 767px) {
-  .icon-envelope {
-    display: none;
-  }
-}
-
-.icon-smartphone {
-  display: block;
-  margin-right: 8px;
-  width: 14px;
-  height: 10px;
-  fill: #757575;
-}
-@media screen and (max-width: 767px) {
-  .icon-smartphone {
-    display: none;
+@media screen and (min-width: 1600px) {
+  .email-text,
+.phone-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-left: 10px;
   }
 }
 
